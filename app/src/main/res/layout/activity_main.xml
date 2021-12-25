@@ -1,169 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFF00"
- >
+    android:orientation="vertical">
 
-    <TextView
-        android:id= "@+id/t1"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:text="Kweepe"
-        android:textAlignment="center"
-        android:textColor="#911ee6"
-        android:textSize="29dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/b1"
-        android:layout_width="196dp"
-        android:layout_height="77dp"
-        android:backgroundTint="#00f284"
-        android:text="Алфавит"
-        android:textColor="#3516db"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.250"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.241"></Button>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/b2"
-        android:layout_width="196dp"
-        android:layout_height="77dp"
-        android:backgroundTint="#00f284"
-        android:text="Слова и выражения"
-        android:textColor="#3516db"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.405">
+            <TextView
+                 android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="Kweepe"
+                android:textAlignment="center"
+                android:textColor="#911ee6"
+                android:textSize="29dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.038" />
+
+            <ImageView
+                android:layout_width="98dp"
+                android:layout_height="86dp"
+                android:src="@drawable/basovieslova"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/b2"
+                app:layout_constraintHorizontal_bias="0.941"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.396" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                 android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:text="Kweepe"
+                android:textAlignment="center"
+                android:textColor="#911ee6"
+                android:textSize="29dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.038" />
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="196dp"
+                android:layout_height="77dp"
+                android:backgroundTint="#00f284"
+                android:text="Слова и выражения"
+                android:textColor="#3516db"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.855"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.396" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--    <Button-->
+    <!--        android:id="@+id/b1"-->
+    <!--        android:layout_width="196dp"-->
+    <!--        android:layout_height="77dp"-->
+    <!--        android:backgroundTint="#00f284"-->
+    <!--        android:text="Алфавит"-->
+    <!--        android:textColor="#3516db"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.250"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.241"/>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/b2"-->
+    <!--        android:layout_width="196dp"-->
+    <!--        android:layout_height="77dp"-->
+    <!--        android:backgroundTint="#00f284"-->
+    <!--        android:text="Слова и выражения"-->
+    <!--        android:textColor="#3516db"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.855"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.405"></Button>-->
 
 
-    </Button>
+    <!--    <Button-->
+    <!--        android:id="@+id/b3"-->
+    <!--        android:layout_width="196dp"-->
+    <!--        android:layout_height="77dp"-->
+    <!--        android:backgroundTint="#00f284"-->
+    <!--        android:text="Задания"-->
+    <!--        android:textColor="#3516db"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.250"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.57"></Button>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/b4"-->
+    <!--        android:layout_width="196dp"-->
+    <!--        android:layout_height="77dp"-->
+    <!--        android:backgroundTint="#00f284"-->
+    <!--        android:text="Настройки"-->
+    <!--        android:textColor="#3516db"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.855"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.724">-->
+
+    <!--    </Button>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/b5"-->
+    <!--        android:layout_width="196dp"-->
+    <!--        android:layout_height="77dp"-->
+    <!--        android:backgroundTint="#00f284"-->
+    <!--        android:text="Выход"-->
+    <!--        android:textColor="#3516db"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.497"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.903">-->
 
 
-    <Button
-        android:id="@+id/b3"
-        android:layout_width="196dp"
-        android:layout_height="77dp"
-        android:backgroundTint="#00f284"
-        android:text="Задания"
-        android:textColor="#3516db"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.250"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.57"></Button>
+    <!--    </Button>-->
 
-    <Button
-        android:id="@+id/b4"
-        android:layout_width="196dp"
-        android:layout_height="77dp"
-        android:backgroundTint="#00f284"
-        android:text="Настройки"
-        android:textColor="#3516db"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.724">
+    <!--    <ImageView-->
+    <!--        android:layout_width="119dp"-->
+    <!--        android:layout_height="97dp"-->
+    <!--        android:src="@drawable/vihod"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.976"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.9" />-->
 
-    </Button>
+    <!--    <ImageView-->
+    <!--        android:layout_width="119dp"-->
+    <!--        android:layout_height="97dp"-->
+    <!--        android:src="@drawable/nastroiki"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.277"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.736" />-->
 
-    <Button
-        android:id="@+id/b5"
-        android:layout_width="196dp"
-        android:layout_height="77dp"
-        android:backgroundTint="#00f284"
-        android:text="Выход"
-        android:textColor="#3516db"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.903">
+    <!--    <ImageView-->
+    <!--        android:layout_width="119dp"-->
+    <!--        android:layout_height="97dp"-->
+    <!--        android:src="@drawable/alfavit"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.808"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.205" />-->
 
+    <!--    <ImageView-->
+    <!--        android:layout_width="119dp"-->
+    <!--        android:layout_height="97dp"-->
+    <!--        android:src="@drawable/sadania"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.832"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.556" />-->
 
-    </Button>
+    <!--    <ImageView-->
+    <!--        android:layout_width="119dp"-->
+    <!--        android:layout_height="90dp"-->
+    <!--        android:src="@drawable/privet"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/b2"-->
+    <!--        app:layout_constraintHorizontal_bias="0.272"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.003" />-->
 
-    <ImageView
-        android:layout_width="119dp"
-        android:layout_height="97dp"
-        android:src="@drawable/vihod"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.976"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
-
-    <ImageView
-        android:layout_width="119dp"
-        android:layout_height="97dp"
-        android:src="@drawable/nastroiki"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.277"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.736" />
-
-    <ImageView
-        android:layout_width="119dp"
-        android:layout_height="97dp"
-        android:src="@drawable/alfavit"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.808"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.205" />
-
-    <ImageView
-        android:layout_width="119dp"
-        android:layout_height="97dp"
-        android:src="@drawable/sadania"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.832"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.556" />
-
-    <ImageView
-        android:layout_width="119dp"
-        android:layout_height="90dp"
-        android:src="@drawable/privet"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/b2"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:layout_width="98dp"
-        android:layout_height="86dp"
-        android:src="@drawable/basovieslova"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/b2"
-        app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--    <ImageView-->
+    <!--        android:layout_width="98dp"-->
+    <!--        android:layout_height="86dp"-->
+    <!--        android:src="@drawable/basovieslova"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="@+id/b2"-->
+    <!--        app:layout_constraintHorizontal_bias="0.941"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.396" />-->
+</ScrollView>
