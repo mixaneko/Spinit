@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFF00"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFF00">
+   >
 
 
-    <TableLayout
-        android:layout_width="412dp"
-        android:layout_height="604dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
-        app:layout_constraintStart_toStartOf="parent">
+
 
         <TableRow>
 
@@ -22,7 +18,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="А"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -34,7 +30,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="И"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -46,7 +42,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="С"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -58,7 +54,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ъ"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -74,7 +70,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Б"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -86,7 +82,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Й"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -98,11 +94,11 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Т"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
-                android:layout_height="75dp"
+                android:layout_height="75sp"
                 android:src="@drawable/spokoinoynochi" />
 
             <TextView
@@ -125,11 +121,11 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="В"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
-                android:layout_height="75dp"
+                android:layout_height="75sp"
                 android:src="@drawable/basovieslova" />
 
             <TextView
@@ -137,7 +133,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="К"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -149,7 +145,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="У"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -161,7 +157,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ь"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -176,7 +172,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Г"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -188,7 +184,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Л"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -200,7 +196,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ф"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -212,7 +208,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Э"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -227,7 +223,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Д"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -239,7 +235,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="М"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -251,7 +247,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Х"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="37dp"
@@ -263,7 +259,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ю"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -279,7 +275,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Е"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -291,7 +287,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Н"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -303,7 +299,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ц"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -315,7 +311,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Я"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -330,7 +326,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ё"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -342,7 +338,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="О"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -354,7 +350,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ч"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -370,7 +366,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ж"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -382,7 +378,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="П"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -394,7 +390,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Ш"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -410,7 +406,7 @@
                 android:fontFamily="serif"
                 android:text="З"
                 android:textAlignment="center"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -422,7 +418,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Р"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -434,7 +430,7 @@
                 android:layout_height="75dp"
                 android:fontFamily="serif"
                 android:text="Щ"
-                android:textSize="55dp" />
+                android:textSize="55sp" />
 
             <ImageView
                 android:layout_width="51.25dp"
@@ -445,4 +441,3 @@
 
     </TableLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
