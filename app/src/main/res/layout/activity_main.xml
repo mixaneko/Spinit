@@ -2,135 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFF00"
-    android:orientation="vertical">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
+    <EditText
+        android:id="@+id/chislo1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        />
+    <EditText
+        android:id="@+id/chislo2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        />
 
-        <ImageView
-            android:layout_width="119dp"
-            android:layout_height="90dp"
-            android:src="@drawable/privet" />
-
-        <TextView
-            android:id="@+id/t1"
-            android:layout_width="110dp"
-            android:layout_height="50dp"
-            android:text="Kweepe"
-            android:textAlignment="center"
-            android:textColor="#911ee6"
-            android:textSize="29sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
-
-        <Button
-            android:id="@+id/b1"
-            android:layout_width="196dp"
-            android:layout_height="77dp"
-            android:backgroundTint="#00f284"
-            android:text="Алфавит"
-            android:textColor="#3516db"
-            />
-
-        <ImageView
-            android:layout_width="119dp"
-            android:layout_height="97dp"
-            android:src="@drawable/alfavit"
-            />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
-
-        <ImageView
-            android:layout_width="98dp"
-            android:layout_height="86dp"
-            android:src="@drawable/basovieslova" />
-
-        <Button
-            android:id="@+id/b2"
-            android:layout_width="196dp"
-            android:layout_height="77dp"
-            android:backgroundTint="#00f284"
-            android:text="Слова и выражения"
-            android:textColor="#3516db" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
-
-        <Button
-            android:id="@+id/b3"
-            android:layout_width="196dp"
-            android:layout_height="77dp"
-            android:backgroundTint="#00f284"
-            android:text="Задания"
-            android:textColor="#3516db" />
-
-        <ImageView
-            android:layout_width="119dp"
-            android:layout_height="97dp"
-            android:src="@drawable/sadania" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
-        <ImageView
-            android:layout_width="119dp"
-            android:layout_height="97dp"
-            android:src="@drawable/nastroiki" />
-        <Button
-            android:id="@+id/b4"
-            android:layout_width="196dp"
-            android:layout_height="77dp"
-            android:backgroundTint="#00f284"
-            android:text="Настройки"
-            android:textColor="#3516db" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
-
-        <Button
-            android:id="@+id/b5"
-            android:layout_width="196dp"
-            android:layout_height="77dp"
-            android:backgroundTint="#00f284"
-            android:text="Выход"
-            android:textColor="#3516db" />
-
-        <ImageView
-            android:layout_width="119dp"
-            android:layout_height="97dp"
-            android:src="@drawable/vihod" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сумма" />
+    <TextView
+        android:id="@+id/summa"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        />
 </LinearLayout>
+
