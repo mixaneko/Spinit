@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Spinit</string>
+    <string name="map">Open Map</string>
+    <string name="call">Call Phone</string>
 </resources>

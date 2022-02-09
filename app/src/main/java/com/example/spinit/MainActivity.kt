@@ -1,45 +1,38 @@
 package com.example.spinit
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.view.View
-import android.widget.EditText
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.example.spinit.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
-    lateinit var  sum:TextView
-    lateinit var zadanieclass: ActivityMainBinding
+    lateinit var sum: TextView
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        zadanieclass = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(zadanieclass.root)
-        val editText1:EditText=findViewById(R.id.chislo1)
-        val editText2:EditText=findViewById(R.id.chislo2)
-        sum=findViewById(R.id.summa)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        zadanieclass.button.setOnClickListener{
-            val a=editText1.text.toString().toIntOrNull()?:0
-            val b= editText2.text.toString().toIntOrNull()?:0
-            val summa=a+b
-             sum.text=summa.toString()
-            }
+        binding.mapButton.setOnClickListener {
+            val intent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("http://maps.google.com/maps?saddr=20.344,34.34&daddr=20.5666,45.345"))
+            startActivity(intent)
+        }
 
+        binding.callButton.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_CALL)
+            intent.data = Uri.parse("tel:" + "+79922062084")
+            startActivity(intent)
 
         }
-    override fun onSaveInstanceState(outState: Bundle) {
-        super.onSaveInstanceState(outState)
-        outState.putString("Sum", sum.toString())
-
     }
+}
 
-
-
-
-
-
-    }
 
 
